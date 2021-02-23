@@ -1,6 +1,6 @@
-import Button from 'elements/Button';
-import React from 'react';
-import 'assets/scss/style.scss';
+import Button from "elements/Button";
+import React from "react";
+import "assets/scss/style.scss";
 
 export default function MostPicked(props) {
   return (
@@ -11,7 +11,7 @@ export default function MostPicked(props) {
           return (
             <div
               key={`mospicked-${index}`}
-              className={`item column-4 ${index === 0 ? ' row-2 ' : 'row-1'}`}
+              className={`item column-4 ${index === 0 ? " row-2 " : "row-1"}`}
             >
               <div className="card card-featured">
                 <div className="tag">
@@ -28,10 +28,10 @@ export default function MostPicked(props) {
                 <div className="meta-wrapper">
                   <Button
                     type="link"
-                    className="streched-link d-block text-white"
+                    className="stretched-link d-block text-white"
                     href={`/properties/${item.name}`}
                   >
-                    {' '}
+                    {" "}
                     <h5>{item.name}</h5>
                   </Button>
                   <span>
